@@ -33,11 +33,15 @@ public class ShoppingCartClient {
         products.add(StaticFactory.getFruitBanana());
         products.add(StaticFactory.getFruitOrange());
 
-        ShoppingCart cart = new OtherPayShopping(products);
+        //模板方法
+        ShoppingCart cart = new CartShopping(products);
+//        ShoppingCart cart = new CashShopping(products);
+//        ShoppingCart cart = new OnlineShopping(products);
+//        ShoppingCart cart = new OtherPayShopping(products);
 
         //注入优惠方案
-//        String discount = "second";
-//        cart.setDiscount(disCounts.get(discount));
+        String discount = "second";
+        cart.setDiscount(disCounts.get(discount));
 
         cart.submitOrder();
     }
