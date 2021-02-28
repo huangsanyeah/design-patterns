@@ -6,6 +6,7 @@ import com.wondes.demo.enjoy.entity.fruit.Orange;
 
 /**
  * 适配器，想要的没有（orangeBag），有的不能用(AppleBag)，那么通过适配器来进行处理
+ * 把苹果盒子伪装成橘子盒子
  */
 public class AdapterClient {
 	public static void main(String[] args){
