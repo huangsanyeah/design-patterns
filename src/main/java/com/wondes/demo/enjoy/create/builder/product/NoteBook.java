@@ -21,9 +21,11 @@ public class NoteBook implements Item{
         this.price = price;
     }
 
+    @Override
     public String name(){
         return name;
     }
+    @Override
     public float price(){
         return price;
     }

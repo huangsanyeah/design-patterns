@@ -6,10 +6,10 @@ import com.wondes.demo.enjoy.entity.fruit.Banana;
 import com.wondes.demo.enjoy.entity.fruit.Orange;
 
 /**
- * 桔子
+ * 会员套餐
  * Created by Peter on 10/9 009.
  */
-public class OldCustomerBuilder implements Builder {
+public class  OldCustomerBuilder implements Builder {
     private FruitMeal fruitMeal = new FruitMeal();
 
     @Override
