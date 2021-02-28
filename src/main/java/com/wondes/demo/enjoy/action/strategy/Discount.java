@@ -1,8 +1,8 @@
 package com.wondes.demo.enjoy.action.strategy;
 
 /**
- * Created by Peter on 10/29 029.
+ * 抽象出来的优惠券接口，实现： 满减 假日全免 首次购 第二单9折优惠
  */
 public interface Discount {
-    public int calculate(int money);
+    int calculate(int money);
 }

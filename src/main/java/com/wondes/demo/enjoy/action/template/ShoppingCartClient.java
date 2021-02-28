@@ -39,8 +39,10 @@ public class ShoppingCartClient {
 //        ShoppingCart cart = new OnlineShopping(products);
 //        ShoppingCart cart = new OtherPayShopping(products);
 
-        //注入优惠方案
-        String discount = "second";
+        //TODO 策略模式注释，注入优惠方案
+        String discount = "full";
+//        String discount = "newer";
+//        String discount = "second";
         cart.setDiscount(disCounts.get(discount));
 
         cart.submitOrder();

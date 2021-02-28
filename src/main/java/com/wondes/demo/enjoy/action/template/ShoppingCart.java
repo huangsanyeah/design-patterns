@@ -12,6 +12,7 @@ import java.util.List;
  * 购物车费用结算过程
  */
 public abstract class ShoppingCart {
+    //优惠方案
     private Discount discount;
     private List<Fruit> products = new ArrayList<>();
 
@@ -29,7 +30,7 @@ public abstract class ShoppingCart {
         int money = balance();
         System.out.println("商品总金额为："+money+"元");
 
-        //优惠减免
+        //TODO 注释：优惠减免【策略模式示例】
         money = discount.calculate(money);
         System.out.println("优惠减免后："+ money+"元，");
 
