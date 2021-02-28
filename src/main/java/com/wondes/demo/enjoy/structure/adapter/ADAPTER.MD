@@ -6,3 +6,4 @@
 
 PS:OrangeBag和AppleBag都是已有的类，是系统已有方法，整个过程，
 只新增了一个OrangeBagAdapter类，去充当OrangeBag实现
+
