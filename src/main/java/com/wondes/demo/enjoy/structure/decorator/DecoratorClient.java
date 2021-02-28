@@ -8,6 +8,7 @@ import com.wondes.demo.enjoy.entity.Fruit;
 
 /**
  * 装饰器模式测试
+ * 相当于了增强打包服务 ，把防伪，加固，加急 在打包功能中附加了上去
  */
 public class DecoratorClient {
     public static void main(String[] args){
