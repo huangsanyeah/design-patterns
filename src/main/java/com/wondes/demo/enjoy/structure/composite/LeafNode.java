@@ -3,7 +3,7 @@ package com.wondes.demo.enjoy.structure.composite;
 import java.util.List;
 
 /**
- * Created by Peter on 10/29 029.
+ * 叶子结点
  */
 public class LeafNode extends Node{
     public LeafNode(String name) {

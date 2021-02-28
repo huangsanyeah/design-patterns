@@ -3,15 +3,21 @@ package com.wondes.demo.enjoy.structure.composite;
 import java.util.List;
 
 /**
- * Created by Peter on 10/29 029.
+ * 节点
  */
 public abstract class Node {
+    /**
+     * 名字
+     */
     private String name;
 
-    public Node(String name){
+    Node(String name){
         this.name = name;
     }
 
+    /**
+     * 获取子节点
+     */
     public abstract List<Node> getChildren();
 
     public String getName() {

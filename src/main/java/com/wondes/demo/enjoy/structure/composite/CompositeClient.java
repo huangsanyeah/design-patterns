@@ -7,11 +7,11 @@ import com.alibaba.fastjson.JSON;
  * 省市县目录组织结构
  */
 public class CompositeClient {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         sendFruit();
     }
 
-    public static void sendFruit(){
+    private static void sendFruit() {
 
         //根目录
         DistrictNode root = new DistrictNode("根");
@@ -36,7 +36,6 @@ public class CompositeClient {
         //以下物流运输业务。。。。
 
     }
-
 
 
 }

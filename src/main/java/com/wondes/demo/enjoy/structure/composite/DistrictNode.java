@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Peter on 10/29 029.
+ * 直辖市节点
  */
 public class DistrictNode extends Node{
     private List<Node> children = new ArrayList<>();
