@@ -5,6 +5,7 @@ package com.wondes.demo.enjoy.structure.bridge.material;
  * Material
  */
 public class Plastic implements Material{
+    @Override
     public void draw(){
         System.out.print("用塑料袋");
     }
