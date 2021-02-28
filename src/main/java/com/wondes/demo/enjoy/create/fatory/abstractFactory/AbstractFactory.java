@@ -7,7 +7,7 @@ import com.wondes.demo.enjoy.entity.Fruit;
 /**
  * 抽象水果工厂
  */
-abstract class AbstractFactory {
+public abstract class AbstractFactory {
 
     public abstract Fruit getFruit();
 
