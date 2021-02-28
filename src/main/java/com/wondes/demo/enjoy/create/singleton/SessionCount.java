@@ -11,7 +11,7 @@ public class SessionCount {
     }
 
     //获取唯一可用的对象
-    //懒汉式
+    //懒汉式 有需要的时候再去创建 而不是初始化类就创建
     public static SessionCount getInstance(){
         if (instance == null){//双重校验锁
             synchronized (SessionCount.class){
@@ -25,15 +25,15 @@ public class SessionCount {
     }
 
     /***以下是业务方法***/
-    public int plus(){
+    int plus(){
         return count.incrementAndGet();
     }
 
-    public int decrease(){
+    int decrease(){
         return count.decrementAndGet();
     }
 
-    public void showMessage(){
+    void showMessage(){
         System.out.println("当前人数："+this.count.get());
     }
 
