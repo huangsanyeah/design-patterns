@@ -4,6 +4,9 @@ import com.wondes.demo.enjoy.entity.bag.AppleBag;
 import com.wondes.demo.enjoy.entity.bag.OrangeBag;
 import com.wondes.demo.enjoy.entity.fruit.Orange;
 
+/**
+ * 适配器，想要的没有（orangeBag），有的不能用(AppleBag)，那么通过适配器来进行处理
+ */
 public class AdapterClient {
 	public static void main(String[] args){
 		Orange orange = new Orange("peter",100);
