@@ -4,7 +4,7 @@ package com.wondes.demo.enjoy.create.builder;
  * 桔子
  * Created by Peter on 10/9 009.
  */
-public class FruitMealController {//收银台---导演类
+public class TestFruitMealController {//收银台---导演类
 
     public void construct() {
 //        Builder builder = new HolidayBuilder();
@@ -23,7 +23,7 @@ public class FruitMealController {//收银台---导演类
     }
 
     public static void main(String[] args) {
-        new FruitMealController().construct();
+        new TestFruitMealController().construct();
     }
 
 }
