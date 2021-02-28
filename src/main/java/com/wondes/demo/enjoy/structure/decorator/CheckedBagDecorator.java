@@ -3,11 +3,15 @@ package com.wondes.demo.enjoy.structure.decorator;
 
 import com.wondes.demo.enjoy.entity.Bag;
 
+/**
+ * 防伪
+ */
 public class CheckedBagDecorator extends BagDecorator {
     public CheckedBagDecorator(Bag bag) {
         super(bag);
     }
 
+    @Override
     public void pack() {
         super.pack();  //调用原有业务方法
         checked();  //打印防伪标识
