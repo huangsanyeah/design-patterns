@@ -5,7 +5,7 @@ import com.wondes.demo.enjoy.entity.bag.AppleBag;
 import com.wondes.demo.enjoy.entity.bag.OrangeBag;
 
 /**
- * 桔子包装适配器
+ * 桔子包装适配器类，用AppleBag来实现适配
  */
 public class OrangeBagAdapter extends OrangeBag {
     private AppleBag appleBag;
