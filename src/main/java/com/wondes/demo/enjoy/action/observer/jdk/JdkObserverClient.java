@@ -1,7 +1,7 @@
 package com.wondes.demo.enjoy.action.observer.jdk;
 
 /**
- * 观察者模式
+ * JDK实现的观察者模式
  * 顾客关注了芒果商品，到货时通知他们
  */
 public class JdkObserverClient {
