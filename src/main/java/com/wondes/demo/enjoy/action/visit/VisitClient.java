@@ -32,6 +32,7 @@ public class VisitClient {
     private static int price() {
         int total = 0;
         for (Fruit fruit : list) {
+            //FIXME 这种出错
 //            total += visit.sell(fruit);
             total += fruit.accept(visit);
         }
