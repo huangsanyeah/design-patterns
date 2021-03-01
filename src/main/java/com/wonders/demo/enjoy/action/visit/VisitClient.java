@@ -35,7 +35,7 @@ public class VisitClient {
     private static int price() {
         int total = 0;
         for (Fruit fruit : list) {
-            //FIXME 这种出错 无法识别Fruit的真实类型
+            //FIXME 这种出错 无法识别Fruit的真实类型 只能按照声明的类型来识别
 //            total += visit.sell(fruit);
 
             //访问者模式，通过指针传递真实对象，是一种双重分派机制，利用双重分派机制，弥补java多态中的方法重载是静态化的不足
