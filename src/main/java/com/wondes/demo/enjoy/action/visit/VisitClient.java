@@ -24,6 +24,10 @@ public class VisitClient {
         list.add(StaticFactory.getFruitOrange());
     }
 
+    public static void main(String[] args) {
+        price();
+    }
+
     //统计库存
     private static int price() {
         int total = 0;
@@ -34,10 +38,6 @@ public class VisitClient {
 
         System.out.println("总价值：" + total);
         return total;
-    }
-
-    public static void main(String[] args) {
-        price();
     }
 
     private static void test1() {

@@ -41,6 +41,7 @@ public class Apple implements Fruit {
 
 
 
+    @Override
     public int accept(Visit visit){
         return visit.sell(this);//指针可以传递真实类型
     }
