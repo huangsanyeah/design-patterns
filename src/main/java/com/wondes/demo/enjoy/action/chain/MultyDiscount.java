@@ -4,18 +4,18 @@ package com.wondes.demo.enjoy.action.chain;
 import com.wondes.demo.enjoy.action.strategy.Discount;
 
 /**
- * Created by Peter on 10/29 029.
+ * 责任链模式抽象父类
  */
 public abstract class MultyDiscount implements Discount {
     protected MultyDiscount nextMultyDiscount;
 
-    public MultyDiscount(MultyDiscount nextMultyDiscount){
+    public MultyDiscount(MultyDiscount nextMultyDiscount) {
         this.nextMultyDiscount = nextMultyDiscount;
     }
 
     @Override
-    public int calculate(int money){
-        if (this.nextMultyDiscount != null){
+    public int calculate(int money) {
+        if (this.nextMultyDiscount != null) {
             return this.nextMultyDiscount.calculate(money);
         }
         return money;

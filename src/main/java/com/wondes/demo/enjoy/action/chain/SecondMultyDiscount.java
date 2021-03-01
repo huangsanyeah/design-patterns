@@ -4,7 +4,7 @@ package com.wondes.demo.enjoy.action.chain;
  * 第二单9折优惠
  */
 public class SecondMultyDiscount extends MultyDiscount {
-    public SecondMultyDiscount(MultyDiscount nextMultyDiscount) {
+    SecondMultyDiscount(MultyDiscount nextMultyDiscount) {
         super(nextMultyDiscount);
     }
 
