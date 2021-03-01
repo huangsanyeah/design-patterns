@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * 访问者模式
  * 商品库存统计
+ * 注意看下test1(),test2()方法
  */
 public class VisitClient {
     private static Visit visit = new Visit();
@@ -25,7 +26,9 @@ public class VisitClient {
     }
 
     public static void main(String[] args) {
-        price();
+        //test1();
+        test2();
+        //price();
     }
 
     //统计库存
@@ -41,17 +44,27 @@ public class VisitClient {
         return total;
     }
 
+    /**
+     * Apple是Fruit的子类，虽然Visit.sell方法中重载了Apple，Orange，Banana的sell方法，
+     * 但是直接调用把apple赋值给Fruit后去调用Fruit的sell还是无法识别其真正的类型Apple
+     * visit.sell
+     */
     private static void test1() {
         Apple apple = new Apple();
         Fruit fruit = apple;
 
-        int price = visit.sell(fruit);//不能识别fruit对象的真实类型
+        //不能识别fruit对象的真实类型
+        int price = visit.sell(fruit);
         System.out.println("fruit价格：" + price);
 
         price = visit.sell(apple);
         System.out.println("apple价格：" + price);
     }
 
+    /**
+     * 对比test1()用fruit.accept(visit)即可传递真实的引用类型Apple
+     * fruit.accept
+     */
     private static void test2() {
         Apple apple = new Apple();
         Fruit fruit = apple;
