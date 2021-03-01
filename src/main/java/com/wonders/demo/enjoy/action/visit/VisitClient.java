@@ -39,6 +39,7 @@ public class VisitClient {
 //            total += visit.sell(fruit);
 
             //访问者模式，通过指针传递真实对象，是一种双重分派机制，利用双重分派机制，弥补java多态中的方法重载是静态化的不足
+            //TODO 注释：关键代码在此
             total += fruit.accept(visit);
         }
 
