@@ -1,2 +1,1 @@
-# design-patterns
-#i设计模式
+# design-patterns设计模式
