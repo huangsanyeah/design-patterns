@@ -30,7 +30,6 @@ public abstract class ShoppingCart {
         int money = balance();
         System.out.println("商品总金额为："+money+"元");
 
-        //TODO 注释：优惠减免【策略模式示例】
         money = discount.calculate(money);
         System.out.println("优惠减免后："+ money+"元，");
 

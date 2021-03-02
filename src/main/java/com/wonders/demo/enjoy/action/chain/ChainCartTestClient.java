@@ -34,9 +34,10 @@ public class ChainCartTestClient {
 
         ShoppingCart cart = new OtherPayShopping(products);
 
-        //TODO 注入优惠方案链条的第一个节点
+        //TODO 注入优惠方案链条的第一个节点，断点打到此处，看multyDiscount的值，实际上就是把多个MultyDiscount
+        //通过setNext的方式串起来，要注意先后顺序
         cart.setDiscount(multyDiscount);
-
+        //这个方法内才会执行责任链模式的业务代码discount.calculate(money)
         cart.submitOrder();
     }
 
