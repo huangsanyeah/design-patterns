@@ -57,7 +57,10 @@ public abstract class ShoppingCart {
         System.out.println("三公里以内，免费送货上门");
     }
 
-    //提交保存
+    /**
+     * 提交保存
+     * 父类定义的方法，延迟到子类去实现，那么就得定义为抽象方法，自然整个类就得是抽象类了
+     */
     protected abstract void pay(int money);
 
 }
