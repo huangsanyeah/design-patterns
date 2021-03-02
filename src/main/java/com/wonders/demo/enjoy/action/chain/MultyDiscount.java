@@ -7,9 +7,9 @@ import com.wonders.demo.enjoy.action.strategy.Discount;
  * 责任链模式抽象父类
  */
 public abstract class MultyDiscount implements Discount {
-    protected MultyDiscount nextMultyDiscount;
+    private MultyDiscount nextMultyDiscount;
 
-    public MultyDiscount(MultyDiscount nextMultyDiscount) {
+    MultyDiscount(MultyDiscount nextMultyDiscount) {
         this.nextMultyDiscount = nextMultyDiscount;
     }
 
