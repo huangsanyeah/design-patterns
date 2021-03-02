@@ -23,7 +23,7 @@ import java.math.BigDecimal;
 public class TestChainOfResponsibility {
 
 	public static void main(String[] args) {
-		// 构造责任链:
+		// 构造责任链:注意Handler的添加顺序
 		HandlerChain chain = new HandlerChain();
 		chain.addHandler(new ManagerHandler());
 		chain.addHandler(new DirectorHandler());
