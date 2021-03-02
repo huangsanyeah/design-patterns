@@ -1,5 +1,5 @@
 策略模式：【通过注入对象，改变行为】
-演示的代码在模板模式ShoppingCastClient 以及ShoppingCart中打了TODO 标识的部分
+演示的代码在模板模式ShoppingCastClient
 
 策略模式核心是通过选择策略类，来执行不同的算法分支。核心是通过注入对象，改变行为
 这个思想就是spring IOC 的思想

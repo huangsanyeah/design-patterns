@@ -39,7 +39,7 @@ public class ShoppingCartClient {
 //        ShoppingCart cart = new OnlineShopping(products);
 //        ShoppingCart cart = new OtherPayShopping(products);
 
-        //TODO 策略模式注释，注入优惠方案
+        //TODO 策略模式演示代码，注入优惠方案
         String discount = "full";
 //        String discount = "newer";
 //        String discount = "second";
