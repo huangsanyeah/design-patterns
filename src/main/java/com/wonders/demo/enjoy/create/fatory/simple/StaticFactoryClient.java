@@ -4,7 +4,12 @@ package com.wonders.demo.enjoy.create.fatory.simple;
 import com.wonders.demo.enjoy.entity.Fruit;
 
 /**
+ * 【静态工厂方法】
  * Peter吃苹果
+ * 1.接口
+ * 2.多个实现类
+ * 3.工厂类 根据参数 返回不同的实现类
+ * 4.调用方法
  */
 public class StaticFactoryClient {
 

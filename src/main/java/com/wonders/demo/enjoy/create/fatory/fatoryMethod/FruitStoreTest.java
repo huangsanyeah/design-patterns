@@ -5,6 +5,7 @@ import com.wonders.demo.enjoy.entity.Bag;
 import com.wonders.demo.enjoy.entity.Fruit;
 
 /**
+ * 【工厂方法模式】
  * 水果店测试
  * Created by Peter on 10/8 008.
  */
