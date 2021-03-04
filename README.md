@@ -87,3 +87,8 @@ java中抽象指【接口】或【抽象类】，两者都不能直接被实例�
 观察者
 策略模式的多种实现
 工厂模式
+
+#参考网站
+https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
+https://www.liaoxuefeng.com/wiki/1252599548343744/1264742167474528
+https://www.runoob.com/design-pattern/design-pattern-tutorial.html
