@@ -8,7 +8,7 @@ import com.wonders.demo.enjoy.service.OrderService;
  * 类似装饰器模式
  * 代售进口水果
  */
-public class ProxyClient {
+public class ProxyTest {
     public static void main(String[] args){
         saveOrder();
     }
